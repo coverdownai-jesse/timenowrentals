@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse and Book | Time Now Rentals</title>
+  <meta name="description" content="Browse and book available cars and SUVs from Time Now Rentals in Copperas Cove, TX. Instant booking, insurance included.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="logo-t">T</span><span class="logo-text">Time Now Rentals</span></a>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fleet.html" class="active">Our Fleet</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="fleet.html" class="btn-nav">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="page-header">
+    <div class="container"><h1>Browse and Book</h1><p>Select your dates, pick your vehicle, and book instantly.</p></div>
+  </div>
+  <section class="widget-section">
+    <div class="widget-container">
+      <wheelbase-store dealer-id="4931047" store-type="auto" hide-hero="true" primary-color="#0a2240" secondary-color="#1a4a80" text-color="#1a1a2e" surface-color="#f8fafc" locale="en-us"></wheelbase-store>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><span class="logo-t">T</span><span class="logo-text">Time Now Rentals</span></a><p>Affordable car rentals in Copperas Cove, TX.</p></div>
+        <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="fleet.html">Our Fleet</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-contact"><h4>Contact</h4><p>Copperas Cove, TX</p><p>(254) 278-1168</p></div>
+      </div>
+      <div class="footer-bottom"><p>2026 Time Now Rentals. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script src="https://d2toxav8qvoos4.cloudfront.net/latest/wheelbase-widget.umd.cjs"></script>
+  <script>document.getElementById('navToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));</script>
+</body>
+</html>
