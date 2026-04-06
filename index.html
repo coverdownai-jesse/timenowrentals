@@ -3,33 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Time Now Rentals | Affordable Car Rentals in Copperas Cove, TX</title>
-  <meta name="description" content="Time Now Rentals offers affordable, reliable car rentals in Copperas Cove, TX. Serving locals, travelers, military, and gig drivers. Book online instantly.">
+  <title>Time Now Rentals | Car Rentals in Copperas Cove, TX</title>
+  <meta name="description" content="Time Now Rentals — affordable, well-maintained car and SUV rentals in Copperas Cove, TX. Book online instantly. Serving Fort Cavazos, Killeen, and surrounding areas.">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo"><span class="logo-t">T</span><span class="logo-text">Time Now Rentals</span></a>
-      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">TNR</span>
+        <span class="logo-name">Time Now Rentals</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="fleet.html">Our Fleet</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="fleet.html" class="btn-nav">Book Now</a></li>
+        <li><a href="fleet.html" class="btn-nav-cta">Book Now</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Your Ride,<br><span class="accent">Right Now.</span></h1>
-      <p>Affordable, reliable car rentals in Copperas Cove, TX. No hassle, no hidden fees — just get moving.</p>
+      <div class="hero-badge">📍 Copperas Cove, TX &nbsp;|&nbsp; Serving Fort Cavazos &amp; Killeen</div>
+      <h1>The Smarter Way<br>to <span class="hero-accent">Rent a Car</span></h1>
+      <p>Clean, affordable vehicles available now. No lines, no waiting — just pick your car and go.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="stat-num">5.0★</span><span class="stat-label">Avg Rating</span></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><span class="stat-num">42+</span><span class="stat-label">Trips Completed</span></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><span class="stat-num">$55</span><span class="stat-label">Starting / Day</span></div>
+      </div>
       <div class="hero-actions">
-        <a href="fleet.html" class="btn-primary">Browse &amp; Book</a>
-        <a href="contact.html" class="btn-secondary">Contact Us</a>
+        <a href="fleet.html" class="btn-hero-primary">Browse &amp; Book Instantly</a>
+        <a href="tel:2542781168" class="btn-hero-secondary">📞 (254) 278-1168</a>
+      </div>
+    </div>
+    <div class="hero-car-preview">
+      <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775085910/p/rentals/513237/images/gt4gju5jmqsystaajmo7.jpg" alt="2025 Nissan Sentra" loading="eager">
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="trust-icon">✅</span> Instant Online Booking</div>
+      <div class="trust-item"><span class="trust-icon">🛡️</span> Coverage Options Available</div>
+      <div class="trust-item"><span class="trust-icon">🚗</span> Clean, Well-Maintained Vehicles</div>
+      <div class="trust-item"><span class="trust-icon">⭐</span> 5.0 Stars on Turo</div>
+      <div class="trust-item"><span class="trust-icon">📍</span> Copperas Cove Pickup</div>
+    </div>
+  </div>
+
+  <!-- FLEET SECTION -->
+  <section class="fleet-section" id="fleet">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Vehicles</span>
+        <h2>Choose Your Ride</h2>
+        <p>Fuel-efficient sedans and spacious SUVs — all clean, insured, and ready to go.</p>
+      </div>
+      <div class="vehicle-grid">
+
+        <div class="vehicle-card">
+          <div class="vehicle-photo">
+            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775085910/p/rentals/513237/images/gt4gju5jmqsystaajmo7.jpg" alt="2025 Nissan Sentra" loading="lazy">
+            <span class="vehicle-tag">Car</span>
+          </div>
+          <div class="vehicle-body">
+            <h3>2025 Nissan Sentra</h3>
+            <div class="vehicle-specs">
+              <span>🪑 5 seats</span>
+              <span>⛽ 35 MPG</span>
+              <span>⚙️ Auto</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="vehicle-price">$55 <span>/ day</span></div>
+              <a href="fleet.html" class="btn-book">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <div class="vehicle-photo">
+            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775085462/p/rentals/513240/images/ra1lhnwa1qys4cm7psa8.jpg" alt="2025 Kia K4" loading="lazy">
+            <span class="vehicle-tag">Car</span>
+          </div>
+          <div class="vehicle-body">
+            <h3>2025 Kia K4</h3>
+            <div class="vehicle-specs">
+              <span>🪑 5 seats</span>
+              <span>⛽ Efficient</span>
+              <span>⚙️ Auto</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="vehicle-price">$55 <span>/ day</span></div>
+              <a href="fleet.html" class="btn-book">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <div class="vehicle-photo">
+            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775077415/p/rentals/513243/images/ooppttfzlduxj6nikkvk.jpg" alt="2022 Kia K5" loading="lazy">
+            <span class="vehicle-tag">Car</span>
+          </div>
+          <div class="vehicle-body">
+            <h3>2022 Kia K5</h3>
+            <div class="vehicle-specs">
+              <span>🪑 5 seats</span>
+              <span>⛽ Efficient</span>
+              <span>⚙️ Auto</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="vehicle-price">$55 <span>/ day</span></div>
+              <a href="fleet.html" class="btn-book">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <div class="vehicle-photo">
+            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775083441/p/rentals/513241/images/u1nc1c0xjbpxtusczxlh.jpg" alt="2024 Kia Forte" loading="lazy">
+            <span class="vehicle-tag">Car</span>
+          </div>
+          <div class="vehicle-body">
+            <h3>2024 Kia Forte</h3>
+            <div class="vehicle-specs">
+              <span>🪑 5 seats</span>
+              <span>⛽ Efficient</span>
+              <span>⚙️ Auto</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="vehicle-price">$55 <span>/ day</span></div>
+              <a href="fleet.html" class="btn-book">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card featured">
+          <div class="vehicle-photo">
+            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775086550/p/rentals/513238/images/hoom2nwshmah9omjgcvp.jpg" alt="2025 Buick Encore GX" loading="lazy">
+            <span class="vehicle-tag suv-tag">SUV</span>
+          </div>
+          <div class="vehicle-body">
+            <h3>2025 Buick Encore GX</h3>
+            <div class="vehicle-specs">
+              <span>🪑 5 seats</span>
+              <span>🚙 SUV</span>
+              <span>⚙️ Auto</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="vehicle-price">$60 <span>/ day</span></div>
+              <a href="fleet.html" class="btn-book">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <div class="vehicle-photo">
+            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775081385/p/rentals/513242/images/u4ug3jucodnkird7yuba.jpg" alt="2023 Kia Forte" loading="lazy">
+            <span class="vehicle-tag">Car</span>
+          </div>
+          <div class="vehicle-body">
+            <h3>2023 Kia Forte</h3>
+            <div class="vehicle-specs">
+              <span>🪑 5 seats</span>
+              <span>⛽ Efficient</span>
+              <span>⚙️ Auto</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="vehicle-price">$55 <span>/ day</span></div>
+              <a href="fleet.html" class="btn-book">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="fleet-cta-wrap">
+        <a href="fleet.html" class="btn-primary-lg">View All Vehicles &amp; Book Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-text">
+          <span class="section-tag">Why Choose Us</span>
+          <h2>Car Rental Made Simple</h2>
+          <p>Skip the big rental counters and long lines. Time Now Rentals keeps it simple — great cars, honest pricing, and real support.</p>
+          <div class="why-perks">
+            <div class="perk-row"><span class="perk-check">✓</span><div><strong>Book online in minutes</strong><p>Browse our fleet, pick your dates, and confirm instantly — no phone calls required.</p></div></div>
+            <div class="perk-row"><span class="perk-check">✓</span><div><strong>No hidden fees</strong><p>What you see is what you pay. Transparent daily rates with no surprise charges.</p></div></div>
+            <div class="perk-row"><span class="perk-check">✓</span><div><strong>Locally owned &amp; operated</strong><p>Based right here in Copperas Cove, TX. We know the area and we're easy to reach.</p></div></div>
+            <div class="perk-row"><span class="perk-check">✓</span><div><strong>Flexible for every need</strong><p>Travelers, locals, military, car in the shop, or gig drivers — coverage options available for all use cases.</p></div></div>
+          </div>
+          <a href="fleet.html" class="btn-primary-lg" style="margin-top:32px; display:inline-block;">Get Started →</a>
+        </div>
+        <div class="why-photo-stack">
+          <img class="why-photo-main" src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775086550/p/rentals/513238/images/hoom2nwshmah9omjgcvp.jpg" alt="Buick Encore GX">
+          <img class="why-photo-overlay" src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775086304/p/rentals/513239/images/hpvhsuef1djvm62ltnlu.jpg" alt="Fleet vehicle">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Customer Reviews</span>
+        <h2>What Our Renters Say</h2>
+        <p>5.0 stars · 12 verified reviews on Turo</p>
+      </div>
+      <div class="reviews-overall">
+        <div class="overall-score">
+          <span class="score-big">5.0</span>
+          <div class="stars-row">★★★★★</div>
+          <span class="score-label">out of 5</span>
+        </div>
+        <div class="overall-bars">
+          <div class="bar-row"><span>Cleanliness</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span>5.0</span></div>
+          <div class="bar-row"><span>Maintenance</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span>5.0</span></div>
+          <div class="bar-row"><span>Communication</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span>5.0</span></div>
+          <div class="bar-row"><span>Convenience</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span>5.0</span></div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Loved the car — will definitely book again, thank you so much!"</p>
+          <div class="review-author"><span class="review-avatar">A</span><div><strong>Amani</strong><span>March 2026 · Nissan Sentra</span></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Great host. Extremely great communication and willingness to work with me."</p>
+          <div class="review-author"><span class="review-avatar">C</span><div><strong>Chastity Marie</strong><span>March 2026 · Nissan Sentra</span></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Great car and host. Very accommodating and communicated with me through my whole trip!"</p>
+          <div class="review-author"><span class="review-avatar">A</span><div><strong>Asyri</strong><span>March 2026 · Nissan Sentra</span></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Love the vehicle — great on gas, host was very informative and kept communication throughout the entire trip. Would most definitely rent again!"</p>
+          <div class="review-author"><span class="review-avatar">C</span><div><strong>Cassandra</strong><span>February 2026 · Nissan Sentra</span></div></div>
+        </div>
+      </div>
+      <div class="reviews-cta">
+        <a href="fleet.html" class="btn-primary-lg">Book Your Rental Today</a>
       </div>
     </div>
   </section>
@@ -38,157 +273,75 @@
   <section class="serve-section">
     <div class="container">
       <div class="section-header">
-        <h2>Who We Serve</h2>
-        <p>Whether you need a car for a day or a month, we have flexible options for everyone.</p>
+        <span class="section-tag">Who We Serve</span>
+        <h2>A Car for Every Situation</h2>
+        <p>Whether you need wheels for a day or a month, we have options that work for you.</p>
       </div>
       <div class="serve-grid">
         <div class="serve-card">
           <div class="serve-icon">✈️</div>
           <h3>Travelers &amp; Visitors</h3>
-          <p>Passing through or visiting Fort Cavazos? Get reliable wheels at a great rate with instant online booking.</p>
+          <p>Passing through or visiting Fort Cavazos? Get reliable wheels with instant online booking — no counter, no wait.</p>
         </div>
         <div class="serve-card">
           <div class="serve-icon">🪖</div>
           <h3>Military &amp; Locals</h3>
-          <p>Serving the Copperas Cove and Fort Cavazos community with clean, affordable cars you can count on.</p>
+          <p>Proudly serving the Copperas Cove and Fort Cavazos community with clean, dependable cars you can count on.</p>
         </div>
         <div class="serve-card">
           <div class="serve-icon">🚗</div>
           <h3>Gig Drivers</h3>
-          <p>Uber, Lyft, DoorDash, or Instacart? Our rentals include Roamly commercial coverage so you can earn with peace of mind.</p>
+          <p>Uber, Lyft, DoorDash, Instacart? We offer flexible rental periods and coverage options suitable for gig work.</p>
         </div>
         <div class="serve-card">
           <div class="serve-icon">🔧</div>
           <h3>Car in the Shop</h3>
-          <p>Don't let a repair leave you stranded. Rent day-to-day while your vehicle gets fixed.</p>
+          <p>Don't let a repair leave you stranded. Keep moving with a day-to-day rental while your vehicle gets fixed.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FLEET PREVIEW WITH PHOTOS -->
-  <section class="fleet-preview">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Fleet</h2>
-        <p>Clean, well-maintained vehicles ready to roll. Sedans and SUVs available.</p>
-      </div>
-      <div class="vehicle-grid">
-        <div class="vehicle-card">
-          <div class="vehicle-img-wrap">
-            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775085910/p/rentals/513237/images/gt4gju5jmqsystaajmo7.jpg" alt="2025 Nissan Sentra" loading="lazy">
-          </div>
-          <div class="vehicle-info">
-            <h3>2025 Nissan Sentra</h3>
-            <p class="vehicle-type">Car &bull; Copperas Cove, TX</p>
-            <p class="vehicle-price">$55 <span>/day</span></p>
-            <a href="fleet.html" class="btn-book">Book Now</a>
-          </div>
-        </div>
-        <div class="vehicle-card">
-          <div class="vehicle-img-wrap">
-            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775085462/p/rentals/513240/images/ra1lhnwa1qys4cm7psa8.jpg" alt="2025 Kia K4" loading="lazy">
-          </div>
-          <div class="vehicle-info">
-            <h3>2025 Kia K4</h3>
-            <p class="vehicle-type">Car &bull; Copperas Cove, TX</p>
-            <p class="vehicle-price">$55 <span>/day</span></p>
-            <a href="fleet.html" class="btn-book">Book Now</a>
-          </div>
-        </div>
-        <div class="vehicle-card">
-          <div class="vehicle-img-wrap">
-            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775077415/p/rentals/513243/images/ooppttfzlduxj6nikkvk.jpg" alt="2022 Kia K5" loading="lazy">
-          </div>
-          <div class="vehicle-info">
-            <h3>2022 Kia K5</h3>
-            <p class="vehicle-type">Car &bull; Copperas Cove, TX</p>
-            <p class="vehicle-price">$55 <span>/day</span></p>
-            <a href="fleet.html" class="btn-book">Book Now</a>
-          </div>
-        </div>
-        <div class="vehicle-card">
-          <div class="vehicle-img-wrap">
-            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775083441/p/rentals/513241/images/u1nc1c0xjbpxtusczxlh.jpg" alt="2024 Kia Forte" loading="lazy">
-          </div>
-          <div class="vehicle-info">
-            <h3>2024 Kia Forte</h3>
-            <p class="vehicle-type">Car &bull; Copperas Cove, TX</p>
-            <p class="vehicle-price">$55 <span>/day</span></p>
-            <a href="fleet.html" class="btn-book">Book Now</a>
-          </div>
-        </div>
-        <div class="vehicle-card">
-          <div class="vehicle-img-wrap">
-            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775086550/p/rentals/513238/images/hoom2nwshmah9omjgcvp.jpg" alt="2025 Buick Encore GX" loading="lazy">
-          </div>
-          <div class="vehicle-info">
-            <h3>2025 Buick Encore GX</h3>
-            <p class="vehicle-type">SUV &bull; Copperas Cove, TX</p>
-            <p class="vehicle-price">$60 <span>/day</span></p>
-            <a href="fleet.html" class="btn-book">Book Now</a>
-          </div>
-        </div>
-        <div class="vehicle-card">
-          <div class="vehicle-img-wrap">
-            <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_auto,h_400,w_600,c_fill/v1775081385/p/rentals/513242/images/u4ug3jucodnkird7yuba.jpg" alt="2023 Kia Forte" loading="lazy">
-          </div>
-          <div class="vehicle-info">
-            <h3>2023 Kia Forte</h3>
-            <p class="vehicle-type">Car &bull; Copperas Cove, TX</p>
-            <p class="vehicle-price">$55 <span>/day</span></p>
-            <a href="fleet.html" class="btn-book">Book Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="fleet-cta">
-        <a href="fleet.html" class="btn-primary">View All &amp; Book Online</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="features">
-    <div class="container">
-      <div class="section-header">
-        <h2>Why Time Now Rentals?</h2>
-        <p>Simple, affordable, and trusted in Copperas Cove.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🔑</div>
-          <h3>Easy Online Booking</h3>
-          <p>Browse vehicles, pick your dates, and pay securely online in minutes.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🛡️</div>
-          <h3>Insurance Included</h3>
-          <p>Every rental includes Roamly commercial rental coverage — personal use or gig work, you're protected.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💰</div>
-          <h3>Affordable Rates</h3>
-          <p>Cars from $55/day and SUVs from $60/day. No hidden fees, no surprises.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📍</div>
-          <h3>Local &amp; Convenient</h3>
-          <p>Based in Copperas Cove, TX — serving the greater Fort Cavazos area.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="nav-logo"><span class="logo-t">T</span><span class="logo-text">Time Now Rentals</span></a><p>Affordable car rentals in Copperas Cove, TX. Personal use, gig work, and more.</p></div>
-        <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="fleet.html">Our Fleet</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-        <div class="footer-contact"><h4>Contact</h4><p>Copperas Cove, TX</p><p><a href="tel:2542781168">(254) 278-1168</a></p></div>
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:flex;">
+            <span class="logo-mark">TNR</span>
+            <span class="logo-name" style="color:#fff;">Time Now Rentals</span>
+          </a>
+          <p>Affordable car and SUV rentals in Copperas Cove, TX. Serving Fort Cavazos, Killeen, and surrounding areas.</p>
+          <p style="margin-top:12px; color:rgba(255,255,255,0.5); font-size:0.82rem;">⭐ 5.0 Stars · 42+ Trips Completed</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>📍 Copperas Cove, TX 76522</p>
+          <p>📞 <a href="tel:2542781168">(254) 278-1168</a></p>
+          <a href="fleet.html" class="footer-book-btn">Book Now</a>
+        </div>
       </div>
-      <div class="footer-bottom"><p>&copy; 2026 Time Now Rentals. All rights reserved.</p></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Time Now Rentals. All rights reserved. | Copperas Cove, TX</p>
+      </div>
     </div>
   </footer>
-  <script>document.getElementById('navToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));</script>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
