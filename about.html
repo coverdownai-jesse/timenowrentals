@@ -1,43 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Time Now Rentals</title>
-  <meta name="description" content="Locally owned car rentals in Copperas Cove, TX serving Fort Cavazos and the surrounding community.">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Time Now Rentals</title>
+    <meta name="description" content="Locally owned car rentals in Copperas Cove, TX serving Fort Cavazos and the surrounding community.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo"><span class="logo-t">T</span><span class="logo-text">Time Now Rentals</span></a>
-      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li><li><a href="fleet.html">Our Fleet</a></li><li><a href="about.html" class="active">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="fleet.html" class="btn-nav">Book Now</a></li>
-      </ul>
+
+  <!-- NAV -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-badge">TNR</div>
+        <span class="brand-name">Time Now Rentals</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="fleet.html" class="nav-link">Fleet</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="fleet.html" class="nav-cta">Book Now</a>
+      </nav>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </nav>
-  <div class="page-header"><div class="container"><h1>About Time Now Rentals</h1><p>Locally owned. Community focused. Always ready.</p></div></div>
-  <section class="section"><div class="container">
-    <div class="about-grid">
-      <div class="about-text">
-        <h2>Who We Are</h2>
-        <p>Time Now Rentals is a locally owned vehicle rental company based in Copperas Cove, Texas. We serve our local community, Fort Cavazos military families, and anyone who needs a reliable, affordable vehicle right now.</p>
-        <p>We built Time Now Rentals to offer a better alternative to big-box rental agencies: real people, real vehicles, and a booking experience that is fast and transparent. No lines, no confusing fees.</p>
-        <h2 style="margin-top:2rem;">Our Mission</h2>
-        <p>To provide clean, reliable, and affordable vehicle rentals with insurance included, making it easy for everyone in Central Texas to get where they need to go.</p>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>About Time Now Rentals</h1>
+    <p>Locally owned. Community focused. Always ready.</p>
+  </div>
+
+  <!-- ABOUT CONTENT -->
+  <section class="why-section">
+    <div class="why-inner">
+      <div class="why-text">
+        <div class="section-label">WHO WE ARE</div>
+        <h2 class="section-title left">Built for This Community</h2>
+        <p class="why-desc">Time Now Rentals is a locally owned vehicle rental company based in Copperas Cove, Texas. We serve our local community, Fort Cavazos military families, and anyone who needs a reliable, affordable vehicle right now.</p>
+        <p class="why-desc">We built Time Now Rentals to offer a better alternative to big-box rental agencies: real people, real vehicles, and a booking experience that is fast and transparent. No lines, no confusing fees.</p>
+        <div class="section-label" style="margin-top: 2rem;">OUR MISSION</div>
+        <p class="why-desc">To provide clean, reliable, and affordable vehicle rentals with coverage options available, making it easy for everyone in Central Texas to get where they need to go.</p>
+        <a href="fleet.html" class="btn-primary">Browse Our Fleet</a>
       </div>
-      <div class="about-highlights">
-        <div class="highlight-card"><div class="highlight-icon">&#x1F3E0;</div><h3>Locally Owned</h3><p>We're your neighbors. Every rental supports our local family business.</p></div>
-        <div class="highlight-card"><div class="highlight-icon">&#x1F6E1;&#xFE0F;</div><h3>Roamly Insured</h3><p>All vehicles carry Roamly insurance. You're covered from the moment you drive away.</p></div>
-        <div class="highlight-card"><div class="highlight-icon">&#x2B50;</div><h3>Clean Fleet</h3><p>Every vehicle is cleaned and inspected before each rental.</p></div>
-        <div class="highlight-card"><div class="highlight-icon">&#x1F91D;</div><h3>Military Friendly</h3><p>Proudly serving Fort Cavazos and the Copperas Cove military community.</p></div>
+      <div class="why-visual">
+        <div class="why-photo-main">
+          <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_600,h_400,c_fill/v1775086304/p/rentals/513238/images/xc4bdpvxe1ckhvgntpgz.jpg" alt="Time Now Rentals vehicle">
+        </div>
+        <div class="why-photo-float">
+          <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_400,h_280,c_fill/v1775086304/p/rentals/513239/images/hpvhsuef1djvm62ltnlu.jpg" alt="Time Now Rentals fleet">
+        </div>
       </div>
     </div>
-  </div></section>
-  <section class="cta-banner"><div class="container"><h2>Ready to Book?</h2><p>Browse our fleet and reserve your vehicle today.</p><a href="fleet.html" class="btn-primary btn-large">Browse Our Fleet</a></div></section>
-  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="nav-logo"><span class="logo-t">T</span><span class="logo-text">Time Now Rentals</span></a><p>Affordable car rentals in Copperas Cove, TX.</p></div><div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="fleet.html">Our Fleet</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-contact"><h4>Contact</h4><p>Copperas Cove, TX</p><p>(254) 278-1168</p></div></div><div class="footer-bottom"><p>2026 Time Now Rentals. All rights reserved.</p></div></div></footer>
-  <script>document.getElementById('navToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));</script>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="serve-section">
+    <div class="serve-inner">
+      <div class="section-label">WHY CHOOSE US</div>
+      <h2 class="section-title">What Sets Us Apart</h2>
+      <div class="serve-grid">
+        <div class="serve-card">
+          <div class="serve-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Locally Owned</h3>
+          <p>We're your neighbors. Every rental supports our local family business in Copperas Cove.</p>
+        </div>
+        <div class="serve-card">
+          <div class="serve-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Coverage Options</h3>
+          <p>Protection plans available for all renters — including gig and rideshare drivers.</p>
+        </div>
+        <div class="serve-card">
+          <div class="serve-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>5.0 Star Rated</h3>
+          <p>Every vehicle is cleaned and inspected before each rental. Our guests rate us 5.0 stars on Turo.</p>
+        </div>
+        <div class="serve-card">
+          <div class="serve-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Military Friendly</h3>
+          <p>Proudly serving Fort Cavazos and the Copperas Cove military community with flexible terms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="brand-badge">TNR</div>
+          <span>Time Now Rentals</span>
+        </div>
+        <p>Affordable car rentals in Copperas Cove, TX. Serving Fort Cavazos, Killeen &amp; surrounding areas.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="fleet.html">Browse Fleet</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Copperas Cove, TX</p>
+        <a href="fleet.html" class="footer-cta">Book a Vehicle &rarr;</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Time Now Rentals. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    document.getElementById('navBurger').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('open');
+      document.getElementById('navBurger').classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
