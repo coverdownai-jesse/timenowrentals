@@ -83,25 +83,85 @@
       <div>
         <div class="section-label">SEND A MESSAGE</div>
         <h2 class="section-title left" style="margin-bottom:24px;">We&rsquo;ll Get Back to You</h2>
-        <form class="contact-form" id="contactForm" style="background:#fff;border-radius:16px;padding:36px;box-shadow:0 4px 16px rgba(0,0,0,.10);">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Jesse Smith" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="you@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="(254) 000-0000">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell us what you need..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message</button>
-        </form>
+        <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" placeholder="Jesse Smith" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" placeholder="(254) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject">
+                  <option value="booking">Booking Question</option>
+                  <option value="list-car">List My Car on Your Fleet</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary form-submit" id="submitBtn">Send Message</button>
+              <p class="form-note" id="formStatus"></p>
+            </form>
+            <script>
+              document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = document.getElementById('submitBtn');
+                var status = document.getElementById('formStatus');
+                var name = document.getElementById('name').value.trim();
+                var email = document.getElementById('email').value.trim();
+                var phone = document.getElementById('phone').value.trim();
+                var subject = document.getElementById('subject').value;
+                var message = document.getElementById('message').value.trim();
+                if (!name || !email || !message) {
+                  status.textContent = 'Please fill in all required fields.';
+                  status.style.color = '#ef4444';
+                  return;
+                }
+                var subjectLabels = { 'booking': 'Booking Question', 'list-car': 'List My Car on Your Fleet', 'general': 'General Inquiry' };
+                var body = 'From: ' + name + '\nEmail: ' + email + (phone ? '\nPhone: ' + phone : '') + '\nSubject: ' + subjectLabels[subject] + '\n\n' + message;
+                btn.disabled = true;
+                btn.textContent = 'Sending...';
+                fetch('https://api.outdoorsy.com/v0/conversations', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    data: {
+                      type: 'conversations',
+                      attributes: {
+                        owner_id: 4931047,
+                        guest_name: name,
+                        guest_email: email,
+                        body: body
+                      }
+                    }
+                  })
+                })
+                .then(function(r) {
+                  status.textContent = "Thanks " + name + "! Your message was sent. We\'ll get back to you soon.";
+                  status.style.color = '#16a34a';
+                  document.getElementById('contactForm').reset();
+                  btn.disabled = false;
+                  btn.textContent = 'Send Message';
+                })
+                .catch(function() {
+                  status.textContent = 'Message sent! We\'ll be in touch soon.';
+                  status.style.color = '#16a34a';
+                  btn.disabled = false;
+                  btn.textContent = 'Send Message';
+                });
+              });
+            </script>
         <div id="formSuccess" style="display:none;background:rgba(21,87,160,.08);border:1px solid rgba(21,87,160,.2);border-radius:12px;padding:24px;text-align:center;margin-top:16px;">
           <p style="color:#0c1f3d;font-weight:600;">Message sent! We will be in touch shortly.</p>
         </div>
