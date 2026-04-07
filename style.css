@@ -946,3 +946,128 @@ wheelbase-store {
      .hero-stat-divider { width: 100%; height: 1px; }
      .hero-stat { padding: 12px 0; flex-direction: row; justify-content: space-between; width: 100%; }
 }
+
+
+/* =============================================
+   LIST YOUR CAR SECTION
+   ============================================= */
+.list-car-section {
+  padding: 96px 0;
+  background: linear-gradient(135deg, #0c1f3d 0%, #1557a0 100%);
+  color: #fff;
+}
+.list-car-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.list-car-text .section-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+.list-car-text .section-title {
+  color: #fff;
+  margin-bottom: 16px;
+}
+.list-car-desc {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.list-car-perks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-car-perks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.perk-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.list-car-perks li div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.list-car-perks li strong {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.list-car-perks li span {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.875rem;
+}
+.list-car-visual {
+  position: relative;
+}
+.list-car-img-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.4);
+}
+.list-car-img-wrap img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+.list-car-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 24px;
+  background: #fbbf24;
+  color: #0c1f3d;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.badge-num {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.badge-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 768px) {
+  .list-car-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .list-car-img-wrap img {
+    height: 240px;
+  }
+  .list-car-badge {
+    bottom: -16px;
+  }
+}
