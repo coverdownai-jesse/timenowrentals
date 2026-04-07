@@ -1,0 +1,5 @@
+# robots.txt for timenowrentals.com
+User-agent: *
+Allow: /
+
+Sitemap: https://timenowrentals.com/sitemap.xml
