@@ -65,50 +65,50 @@
   </div>
 
   <!-- CONTACT CONTENT -->
-  <section class="booking-section" style="text-align:left;">
-    <div class="contact-grid-inner" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+  <section class="contact-section">
+    <div class="contact-grid">
 
       <!-- Contact Info -->
       <div>
         <div class="section-label">GET IN TOUCH</div>
-        <h2 class="section-title left" style="margin-bottom:16px;">Reach Out</h2>
-        <p style="color:#4b5563;font-size:1rem;line-height:1.7;margin-bottom:36px;">Have a question about a vehicle, booking, or anything else? Reach out and we will get back to you soon.</p>
+        <h2 class="section-title left mb-sm">Reach Out</h2>
+        <p class="contact-description">Have a question about a vehicle, booking, or anything else? Reach out and we will get back to you soon.</p>
 
-        <div style="display:flex;flex-direction:column;gap:24px;">
-          <div style="display:flex;align-items:flex-start;gap:16px;">
-            <div class="serve-icon" style="flex-shrink:0;">
+        <div class="contact-info-stack">
+          <div class="contact-info-item">
+            <div class="serve-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.13 1 .36 1.98.71 2.92a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.94.35 1.92.58 2.92.71A2 2 0 0122 16.92z"/></svg>
             </div>
             <div>
-              <strong style="display:block;font-size:0.95rem;font-weight:700;color:#0c1f3d;margin-bottom:3px;">Phone</strong>
-              <a href="tel:2542781168" style="font-size:0.9rem;color:#1557a0;font-weight:600;">(254) 278-1168</a>
+              <strong class="contact-info-label">Phone</strong>
+              <a href="tel:2542781168" class="contact-info-link">(254) 278-1168</a>
             </div>
           </div>
-          <div style="display:flex;align-items:flex-start;gap:16px;">
-            <div class="serve-icon" style="flex-shrink:0;">
+          <div class="contact-info-item">
+            <div class="serve-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <strong style="display:block;font-size:0.95rem;font-weight:700;color:#0c1f3d;margin-bottom:3px;">Location</strong>
-              <span style="font-size:0.9rem;color:#4b5563;">Copperas Cove, TX &mdash; Residential pickup and drop-off</span>
+              <strong class="contact-info-label">Location</strong>
+              <span class="contact-info-text">Copperas Cove, TX &mdash; Residential pickup and drop-off</span>
             </div>
           </div>
-          <div style="display:flex;align-items:flex-start;gap:16px;">
-            <div class="serve-icon" style="flex-shrink:0;">
+          <div class="contact-info-item">
+            <div class="serve-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div>
-              <strong style="display:block;font-size:0.95rem;font-weight:700;color:#0c1f3d;margin-bottom:3px;">Hours</strong>
-              <span style="font-size:0.9rem;color:#4b5563;">Available by appointment. Book online 24/7.</span>
+              <strong class="contact-info-label">Hours</strong>
+              <span class="contact-info-text">Available by appointment. Book online 24/7.</span>
             </div>
           </div>
-          <div style="display:flex;align-items:flex-start;gap:16px;">
-            <div class="serve-icon" style="flex-shrink:0;">
+          <div class="contact-info-item">
+            <div class="serve-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
             </div>
             <div>
-              <strong style="display:block;font-size:0.95rem;font-weight:700;color:#0c1f3d;margin-bottom:3px;">Fastest Way to Book</strong>
-              <a href="fleet.html" style="font-size:0.9rem;color:#1557a0;font-weight:600;">Browse our fleet online</a><span style="font-size:0.9rem;color:#4b5563;"> and book instantly.</span>
+              <strong class="contact-info-label">Fastest Way to Book</strong>
+              <a href="fleet.html" class="contact-info-link">Browse our fleet online</a><span class="contact-info-text"> and book instantly.</span>
             </div>
           </div>
         </div>
@@ -117,8 +117,8 @@
       <!-- Contact Form -->
       <div>
         <div class="section-label">SEND A MESSAGE</div>
-        <h2 class="section-title left" style="margin-bottom:24px;">We&rsquo;ll Get Back to You</h2>
-        <form class="contact-form" id="contactForm" style="background:#fff;border-radius:16px;padding:36px;box-shadow:0 4px 16px rgba(0,0,0,.10);">
+        <h2 class="section-title left mb-md">We&rsquo;ll Get Back to You</h2>
+        <form class="contact-form contact-form-card" id="contactForm">
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" placeholder="Jesse Smith" required>
@@ -135,10 +135,10 @@
             <label for="message">Message</label>
             <textarea id="message" rows="5" placeholder="Tell us what you need..." required></textarea>
           </div>
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+          <button type="submit" class="btn-primary btn-primary-full">Send Message</button>
         </form>
-        <div id="formSuccess" role="status" aria-live="polite" style="display:none;background:rgba(21,87,160,.08);border:1px solid rgba(21,87,160,.2);border-radius:12px;padding:24px;text-align:center;margin-top:16px;">
-          <p style="color:#0c1f3d;font-weight:600;">Message sent! We will be in touch shortly.</p>
+        <div id="formSuccess" class="form-success" role="status" aria-live="polite">
+          <p>Message sent! We will be in touch shortly.</p>
         </div>
       </div>
 
@@ -167,11 +167,11 @@
         <h4>Contact</h4>
         <p>Copperas Cove, TX</p>
         <a href="tel:2542781168">(254) 278-1168</a>
-        <a href="fleet.html" class="footer-cta">Book a Vehicle &rarr;</a>
+        <a href="fleet.html" class="footer-cta">Book a Vehicle →</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Time Now Rentals. All rights reserved.</p>
+      <p>© 2026 Time Now Rentals. All rights reserved.</p>
     </div>
   </footer>
 
@@ -207,10 +207,6 @@
   </script>
 
   <script>
-    const header = document.getElementById('siteHeader');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 60);
-    });
     document.getElementById('navBurger').addEventListener('click', () => {
       document.getElementById('mainNav').classList.toggle('open');
       document.getElementById('navBurger').classList.toggle('open');
