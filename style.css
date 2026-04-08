@@ -385,7 +385,7 @@ wheelbase-rentals-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  color: white;
   flex-shrink: 0;
   margin-bottom: 4px;
 }
@@ -481,7 +481,7 @@ wheelbase-rentals-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  color: var(--gold);
   flex-shrink: 0;
 }
 .list-car-perks strong {
