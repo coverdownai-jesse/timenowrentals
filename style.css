@@ -346,8 +346,13 @@ a { color: inherit; text-decoration: none; }
   background: var(--off-white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-lg);
-  overflow: hidden;
-  min-height: 480px;
+  overflow: visible;
+}
+
+wheelbase-store {
+  display: block;
+  width: 100%;
+  min-height: 600px;
 }
 
 /* ── Why Section ── */
