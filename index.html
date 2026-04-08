@@ -32,10 +32,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://d2toxav8qvoos4.cloudfront.net">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1687917156585-2edf5b37a562?auto=format&fit=crop&w=1400&q=80">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23f4a800'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='42' font-weight='900' text-anchor='middle' fill='%230c1f3d'>TNR</text></svg>">
   </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- NAV -->
     <header class="site-header" id="siteHeader">
@@ -44,7 +46,7 @@
                             <div class="brand-badge">TNR</div>
                             <span class="brand-name">Time Now Rentals</span>
                   </a>
-                  <nav class="main-nav" id="mainNav">
+                  <nav class="main-nav" id="mainNav" aria-label="Main navigation">
                             <a href="index.html" class="nav-link active">Home</a>
                             <a href="fleet.html" class="nav-link">Fleet</a>
                             <a href="about.html" class="nav-link">About</a>
@@ -57,10 +59,11 @@
           </div>
     </header>
 
+  <main id="main-content">
   <!-- HERO -->
   <section class="hero">
       <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1687917156585-2edf5b37a562?auto=format&fit=crop&w=1400&q=80" alt="Time Now Rentals fleet" class="hero-img">
+            <img src="https://images.unsplash.com/photo-1687917156585-2edf5b37a562?auto=format&fit=crop&w=1400&q=80" alt="Time Now Rentals fleet" class="hero-img" width="1400" height="933" fetchpriority="high">
             <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -196,10 +199,10 @@
             </div>
               <div class="why-visual">
                         <div class="why-photo-main">
-                                    <img src="https://images.unsplash.com/photo-1615887110697-0819ec23465f?auto=format&fit=crop&w=600&h=400&q=80" alt="2025 Buick Encore GX" loading="lazy">
+                                    <img src="https://images.unsplash.com/photo-1615887110697-0819ec23465f?auto=format&fit=crop&w=600&h=400&q=80" alt="2025 Buick Encore GX" loading="lazy" width="600" height="400">
                         </div>
                         <div class="why-photo-float">
-                                    <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_400,h_280,c_fill/v1775086304/p/rentals/513239/images/hpvhsuef1djvm62ltnlu.jpg" alt="2025 Buick Encore GX White" loading="lazy">
+                                    <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_400,h_280,c_fill/v1775086304/p/rentals/513239/images/hpvhsuef1djvm62ltnlu.jpg" alt="2025 Buick Encore GX White" loading="lazy" width="400" height="280">
                         </div>
               </div>
       </div>
@@ -309,6 +312,7 @@
                   </div>
           </div>
     </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -419,6 +423,56 @@
       "@type": "WebSite",
       "name": "Time Now Rentals",
       "url": "https://timenowrentals.com"
+    }
+    </script>
+
+    <!-- JSON-LD: FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to rent a car from Time Now Rentals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our vehicles start at $55–$60 per day with no hidden fees. What you see is what you pay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Time Now Rentals located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are based in Copperas Cove, TX, serving Fort Cavazos, Killeen, and the surrounding Central Texas area. We offer residential pickup and drop-off."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book a vehicle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book instantly online at timenowrentals.com. Select your dates, pick a vehicle, and confirm — no phone calls required. You can also call us at (254) 278-1168."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer coverage or insurance options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, protection plans are available for all renters, including gig and rideshare drivers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I rent a car for Uber, Lyft, or DoorDash?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our vehicles are available for gig and rideshare use, and we offer coverage options specifically for gig drivers."
+          }
+        }
+      ]
     }
     </script>
 

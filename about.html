@@ -35,6 +35,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23f4a800'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='42' font-weight='900' text-anchor='middle' fill='%230c1f3d'>TNR</text></svg>">
   </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- NAV -->
   <header class="site-header scrolled" id="siteHeader">
@@ -43,7 +44,7 @@
         <div class="brand-badge">TNR</div>
         <span class="brand-name">Time Now Rentals</span>
       </a>
-      <nav class="main-nav" id="mainNav">
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="fleet.html" class="nav-link">Fleet</a>
         <a href="about.html" class="nav-link active">About</a>
@@ -56,6 +57,7 @@
     </div>
   </header>
 
+  <main id="main-content">
   <!-- PAGE HERO -->
   <div class="page-hero">
     <h1>About Time Now Rentals</h1>
@@ -76,10 +78,10 @@
       </div>
       <div class="why-visual">
         <div class="why-photo-main">
-          <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_600,h_400,c_fill/v1775086304/p/rentals/513238/images/xc4bdpvxe1ckhvgntpgz.jpg" alt="Time Now Rentals vehicle" loading="lazy">
+          <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_600,h_400,c_fill/v1775086304/p/rentals/513238/images/xc4bdpvxe1ckhvgntpgz.jpg" alt="Time Now Rentals vehicle" loading="lazy" width="600" height="400">
         </div>
         <div class="why-photo-float">
-          <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_400,h_280,c_fill/v1775086304/p/rentals/513239/images/hpvhsuef1djvm62ltnlu.jpg" alt="Time Now Rentals fleet" loading="lazy">
+          <img src="https://res.cloudinary.com/outdoorsy/image/upload/t_odw,a_exif,q_auto,f_auto,w_400,h_280,c_fill/v1775086304/p/rentals/513239/images/hpvhsuef1djvm62ltnlu.jpg" alt="Time Now Rentals fleet" loading="lazy" width="400" height="280">
         </div>
       </div>
     </div>
@@ -122,6 +124,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -173,6 +176,17 @@
       "bestRating": "5",
       "ratingCount": "42"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://timenowrentals.com/" },
+      { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://timenowrentals.com/about.html" }
+    ]
   }
   </script>
 
