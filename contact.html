@@ -75,6 +75,15 @@
         <div style="display:flex;flex-direction:column;gap:24px;">
           <div style="display:flex;align-items:flex-start;gap:16px;">
             <div class="serve-icon" style="flex-shrink:0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.13 1 .36 1.98.71 2.92a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.94.35 1.92.58 2.92.71A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <strong style="display:block;font-size:0.95rem;font-weight:700;color:#0c1f3d;margin-bottom:3px;">Phone</strong>
+              <a href="tel:2542781168" style="font-size:0.9rem;color:#1557a0;font-weight:600;">(254) 278-1168</a>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:16px;">
+            <div class="serve-icon" style="flex-shrink:0;">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
@@ -126,7 +135,7 @@
           </div>
           <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message</button>
         </form>
-        <div id="formSuccess" style="display:none;background:rgba(21,87,160,.08);border:1px solid rgba(21,87,160,.2);border-radius:12px;padding:24px;text-align:center;margin-top:16px;">
+        <div id="formSuccess" role="status" aria-live="polite" style="display:none;background:rgba(21,87,160,.08);border:1px solid rgba(21,87,160,.2);border-radius:12px;padding:24px;text-align:center;margin-top:16px;">
           <p style="color:#0c1f3d;font-weight:600;">Message sent! We will be in touch shortly.</p>
         </div>
       </div>

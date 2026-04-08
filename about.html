@@ -152,6 +152,30 @@
     </div>
   </footer>
 
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRental",
+    "name": "Time Now Rentals",
+    "url": "https://timenowrentals.com",
+    "telephone": "+1-254-278-1168",
+    "description": "Locally owned car rental company in Copperas Cove, TX. Serving Fort Cavazos military families and the Central Texas community.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Copperas Cove",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "ratingCount": "42"
+    }
+  }
+  </script>
+
   <script>
     const header = document.getElementById('siteHeader');
     window.addEventListener('scroll', () => {
